@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hover-lift:focus-visible {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  outline: 6px solid #382B83;
+  outline-offset: 6px;
+}
+
+
+/* Product Card Styling */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  background-color: #ffffff;
+}
+
+.card-title {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+
+  .card-body {
+    padding: 14px;
+  }
+}
+
+/* Tablet Responsive */
+@media (min-width: 577px) and (max-width: 991px) {
+  .card-img-top {
+    height: 180px !important;
+  }
+}
